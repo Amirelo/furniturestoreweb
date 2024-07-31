@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Saira';
+    src: url(./fonts/Saira/Saira-VariableFont_wdth,wght.ttf);
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+*{
+    font-family: 'Saira';
+    box-sizing: border-box;
+    margin:0;
+    color: #23262F;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1% 9% 0;
+    background-image: linear-gradient(#ffffff00 70%, #ffffff 95%);
+}
+
+header *{
+    color: white;
+}
+
+header section{
+    position: relative;
+}
+
+header img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    margin-bottom: 10%;
+}
+
+.navbar div{
+    display: flex;
+    gap:60px;
+}
+
+.quote{
+    text-align: center;
+}
+
+.quote h1{
+    margin-bottom: 30px;
+    padding: 0 10%;
+    font-size: 48px;
+}
+
+.quote p{
+    margin-bottom: 85px;
+    padding: 0 30%;
+}
+
+.quote button {
+    width: 257px;
+    height: 62px;
+    background-color: #00000000;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.quote button div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color:rgb(226, 226, 226,0.4);
+    backdrop-filter: blur(2px);    
+
+}
+
+.quote button p{
+    position: absolute;
+    line-height: 62px;
+    top:0;
+    left:0;
+    right: 0;
+}
+
+.quick_info{
+    display: flex;
+    justify-content: space-between;
+    background-color: #286F6C;
+    text-align: center;
+    padding: 2% 5%;
+    border-radius: 20px;
+    margin-top:auto;
+}
+
+.quick_info article p{
+    padding:0 20%;
+}
+
+main section {
+    padding: 2% 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section img{
+    width: 50%;
+    border-radius: 6px;
+}
+
+main section div{
+    width: 40%;
+}
+
+main section h2{
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+}
+
+main section p {
+    margin-bottom: 35px;
+}
+
+main section p:nth-child(5) {
+    margin-bottom: 25px !important;
+}
+
+main section li{
+    list-style: circle inside url(./images/circle_check.svg);
+}
+
+.new{
+    padding: 2% 0 2% 9%;
+    gap:2%;
+}
+
+.new div:first-child{
+    width: 30%;
+}
+
+.new div:first-child button{
+    border: none;
+    background-color: #00000000;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.new div:first-child button i{
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.new div:last-child{
+    display: flex;
+    gap: 2%;
+    width:100%;
+    height: 400px;
+}
+
+.new div:last-child article{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(to top,rgb(0,0,0,0.75),#00000000);
+    color: rgba(red, green, blue, alpha);
+}
+
+.new div:last-child article p {
+    position: absolute;
+    bottom: 12px;
+    left:0;
+    right:0;
+    margin:0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+
+}
+
+.new div:last-child article img{
+    position: relative;
+    border-radius: 5px !important;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.person_comment{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.person_comment img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.person_comment div{
+    width: 100%;
+}
+
+.person_comment div *{
+    margin: 0;
+}
+
+.icon_button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 10px 0  rgba(15, 27, 51, 5%);
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.icon_button i {
+    margin:0;
+    padding:0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.primary{
+    background-color: #286F6C;
+    color: white;
+}
+
+.primary i{
+    color: inherit;
+}

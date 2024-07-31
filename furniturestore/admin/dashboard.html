@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <div class="navigation">
+            <h1 class="nav_title text-primary upcase font-poppins mb-lg">Horizon <span class="normal">free</span></h1>
+            <nav class="nav_bar">
+                <div style="width: 4px; height: 36px; background-color: blue; position: absolute; right: 0; top:-8px">
+                </div>
+                <div>
+                    <i class="material-symbols-outlined text-primary icon-fill">
+                        home
+                    </i>
+                    <p class="text-primary bold">Dashboard</p>
+                </div>
+                <div>
+                    <i class="material-symbols-outlined">
+                        shopping_cart
+                    </i>
+                    <p>NFT Marketplace</p>
+                </div>
+                <div>
+                    <i class="material-symbols-outlined">
+                        equalizer
+                    </i>
+                    <p>Tables</p>
+                </div>
+                <div>
+                    <i class="material-symbols-outlined">
+                        view_kanban
+                    </i>
+                    <p>Kanban</p>
+                </div>
+                <div>
+                    <i class="material-symbols-outlined icon-fill">
+                        person
+                    </i>
+                    <p>Profile</p>
+                </div>
+                <div>
+                    <i class="material-symbols-outlined icon-fill">
+                        lock
+                    </i>
+                    <p>Sign In</p>
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+    <main>
+        <section>
+            <p class="text-primary-light">Pages / Dashboard</p>
+            <h1 class="text-primary">Main Dashboard</h1>
+            <div class="searchbar">
+                <div>
+                    <i class="material-symbols-outlined icon-fill">
+                        search
+                    </i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <i class="material-symbols-outlined">notifications</i>
+                <i class="material-symbols-outlined icon-fill">dark_mode</i>
+                <i class="material-symbols-outlined">info</i>
+                <img src="https://cdn.pixabay.com/photo/2024/02/19/08/35/sailboat-8582847_960_720.jpg" alt="">
+            </div>
+        </section>
+        <section class="quick-info">
+            <article>
+                <i class="material-symbols-outlined">equalizer</i>
+                <div>
+                    <p>Earnings</p>
+                    <h3>$350.4</h3>
+                </div>
+            </article>
+
+            <article>
+                <i class="material-symbols-outlined">attach_money</i>
+                <div>
+                    <p>Spend this month</p>
+                    <h3>$542.39</h3>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <p>Sales</p>
+                    <h3>$574.44</h3>
+                    <p><span style="color: green;" class="bold">+23%</span> since last month</p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <p>Your balance</p>
+                    <h3>$1,000</h3>
+                </div>
+            </article>
+        </section>
+        <section class="revenues">
+            <article>
+                <div>
+                    <div class="button_month">
+                        <i class="material-symbols-outlined">calendar_month</i>
+                        This month
+                    </div>
+                    <h3>$37.5K</h3>
+                    <p>Total spent</p>
+                    <p>On track</p>
+                </div>
+                <canvas id="lineChart" style="width:100px"></canvas>
+            </article>
+        </section>
+    </main>
+</body>
+<script>
+    const xValues = [50, 60, 70, 80, 90, 100];
+    const yValues = [7, 8, 8, 9, 9, 9];
+    new Chart("lineChart", {
+        type: "line",
+        options:{
+            responsive: true,
+            maintainAspectRatio:false
+        },
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0.4,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues
+            }]
+        },
+        
+    });
+</script>
+
+</html>
