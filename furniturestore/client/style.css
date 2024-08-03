@@ -3,15 +3,17 @@
     src: url(./fonts/Saira/Saira-VariableFont_wdth,wght.ttf);
 }
 
+:root{
+    --primary-color:white;
+    --text-color:#23262F;
+    --secondary-color:#286F6C;
+}
+
 a{
     text-decoration: none;
 }
 img{
     object-fit: cover;
-}
-
-.bold{
-    font-weight: bold;
 }
 
 .icon_solid{
@@ -22,7 +24,7 @@ img{
     font-family: 'Saira';
     box-sizing: border-box;
     margin:0;
-    color: #23262F;
+    color: var(--text-color);
 }
 
 html{
@@ -83,14 +85,14 @@ header img{
 }
 
 .quote h1{
-    margin-bottom: 30px;
+    margin-bottom: 2.4%;
     padding: 0 10%;
     font-size: 48px;
 }
 
 .quote p{
-    margin-bottom: 85px;
-    padding: 0 30%;
+    margin-bottom: 6%;
+    padding: 0 20%;
 }
 
 .quote button {
@@ -134,11 +136,38 @@ header img{
     padding: 2% 5%;
     border-radius: 20px;
     margin-top:auto;
+    flex-wrap: wrap;
 }
 
 .quick_info article p{
     padding:0 20%;
 }
+
+.header_about{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header_about article{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 0;
+    padding: 10% 1%;
+    border-radius: 20%;
+    transition: 0.2s;
+}
+
+.header_about article:hover{
+    box-shadow: -2px 2px 8px 0px black;
+    transition: 0.2s;
+}
+
 
 main section {
     padding: 2% 9%;
@@ -412,4 +441,8 @@ footer section article h2{
 
 footer section article a {
     margin-bottom: 20px;    
+}
+
+footer hr {
+    margin-bottom: 3%;
 }
