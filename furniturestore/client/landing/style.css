@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Saira';
-    src: url(./fonts/Saira/Saira-VariableFont_wdth,wght.ttf);
+    src: url(../fonts/Saira/Saira-VariableFont_wdth,wght.ttf);
 }
 
 :root{
@@ -11,7 +11,15 @@
 
 a{
     text-decoration: none;
+    transition: 0.2s;
 }
+
+a:hover{
+    font-weight: 500;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
 img{
     object-fit: cover;
 }
@@ -71,6 +79,10 @@ header img{
     align-items: center;
 }
 
+.navbar h1{
+    cursor:none;
+}
+
 .navbar {
     margin-bottom: 10%;
 }
@@ -107,6 +119,12 @@ header img{
     font-size: 20px;
     cursor: pointer;
     text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.quote button:hover{
+    box-shadow: -2px 1px 4px 0px var(--text-color);
+    transition: 0.3s;
 }
 
 .quote button div{

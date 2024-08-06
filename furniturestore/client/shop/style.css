@@ -1,0 +1,84 @@
+@font-face{
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 9%;
+    background-color: black;
+    color: white;
+    height: 10%;
+}
+
+header h2{
+    flex:2
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;    
+    flex:1;
+    height: 100%;
+    align-items: center;
+}
+
+header nav hr{
+    height: 30%;
+}
+
+header nav a{
+    transition: 0.3s;
+}
+
+header nav a:hover{
+    font-weight: 500;
+    border-bottom: 1px solid white;
+    transition: 0.3s;
+}
+
+.selected{
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.searchbar{
+    height: 40px;
+    width: 300px;
+    display: flex;
+    border-radius:8px;
+    overflow: hidden;
+    border: 1px solid black;
+    width: 30%;
+}
+
+.searchbar input{
+    border-radius: 0;
+    border: none;
+    flex: 1;
+}
+
+.searchbar button{
+    width: 40px;
+    border-radius:0;
+    border:none;
+    border-left: 1px solid black;
+}
