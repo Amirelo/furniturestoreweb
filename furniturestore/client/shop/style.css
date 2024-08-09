@@ -49,6 +49,11 @@ header nav a{
     transition: 0.3s;
 }
 
+header nav a i{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 header nav a:hover{
     font-weight: 500;
     border-bottom: 1px solid white;
@@ -67,7 +72,6 @@ header nav a:hover{
     border-radius:8px;
     overflow: hidden;
     border: 1px solid black;
-    width: 30%;
 }
 
 .searchbar input{
@@ -81,4 +85,47 @@ header nav a:hover{
     border-radius:0;
     border:none;
     border-left: 1px solid black;
+}
+
+.filter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.products{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, 200px);
+    gap:1px;
+    row-gap: 20px;
+    justify-content: space-between;
+
+}
+
+.products article{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.products img{
+    width: 100%
+}
+
+.pagination{
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+    
+}
+
+.pagination button{
+    width: 2.5rem;
+    height: 2.5rem;
 }
