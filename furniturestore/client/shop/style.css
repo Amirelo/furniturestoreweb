@@ -129,3 +129,92 @@ header nav a:hover{
     width: 2.5rem;
     height: 2.5rem;
 }
+
+.signin{
+    background-image: linear-gradient(135deg,#16A085,#F4D03F);
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin_card{
+    width: 50%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding:20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signin_card > h1 {
+    align-self: center;
+}
+
+.signin_card > div{
+    display: flex;
+    height: 40px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.signin_card > div > label {
+    flex:1;
+    line-height: 30px;
+}
+
+.signin_card > div > input {
+    flex:4;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+
+.primary{
+    width: 50%;
+    height: 46px;
+    align-self: center;
+}
+
+.div_social_button {
+    display: flex;
+    height: 40px;
+    gap:40px
+
+}
+
+.div_social_button > button {
+    flex:1;
+}
+
+.signin_card_footer{
+    margin-top: auto;
+    margin-bottom: 0;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signin_card_footer > span {
+    color:blue;
+    font-weight: bold;
+}
+
+.signin_card_footer:hover {
+    font-weight: bold;
+    transition: 0.3s;
+    border-bottom: 1px solid black;
+}
+
+.p_forgot_password{
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    border-bottom: 1px solid black;
+}
+
+.p_forgot_password:hover {
+    font-weight: bold;
+    transition: 0.3s;
+}
